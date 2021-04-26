@@ -13,7 +13,9 @@ ul {
   list-style: none;
   > li {
     margin-left: 1rem;
-    text-decoration: none; // <-- ???
+    a {
+      text-decoration: none;
+    }
     :visited {
       color: $White;
     }

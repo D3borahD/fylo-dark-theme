@@ -40,6 +40,9 @@ ul {
 
 ul > li {
   margin-left: 1rem;
+}
+
+ul > li a {
   text-decoration: none;
 }
 
@@ -144,6 +147,7 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  font-weight: 400;
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
