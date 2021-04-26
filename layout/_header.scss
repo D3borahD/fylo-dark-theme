@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1.3rem;
+  > img {
+    width: 20%;
+  }
+}
+ul {
+  display: flex;
+  color: $White;
+  list-style: none;
+  > li {
+    margin-left: 1rem;
+    text-decoration: none; // <-- ???
+    :visited {
+      color: $White;
+    }
+  }
+}

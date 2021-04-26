@@ -1,0 +1,13 @@
+button {
+  @include button-forme;
+  background: linear-gradient(
+    to right,
+    $CyanInsideCall-to-actionGradient,
+    $BlueInsideCall-to-actionGradient
+  );
+  color: $White;
+  border: none;
+  &:hover {
+    background: $CyanInsideCall-to-actionGradient;
+  }
+}

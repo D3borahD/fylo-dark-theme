@@ -1,0 +1,23 @@
+// 1 Utils
+//     1 Variables
+@import "./utils/variables";
+//     2 Fonction
+//     3 Mixin
+@import "./utils/mixins";
+//     4 Placeholder
+// 2 Vendor
+// 3 Bases
+@import "./bases/polices";
+// 4 Composants
+@import "./composants/bouton";
+// 5 Layout
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/form";
+@import "./layout/footer";
+
+// 6 Pages
+@import "./pages/accueil";
+@import "./pages/introduction";
+@import "./pages/services";
+// 7 Themes
