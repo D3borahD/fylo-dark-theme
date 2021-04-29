@@ -20,11 +20,6 @@ section {
   }
 }
 
-.introduction__bloc {
-  h1 {
-    margin-bottom: 2rem;
-  }
-}
 .service,
 .productive {
   h2 {
@@ -35,10 +30,25 @@ section {
   }
 }
 
+.productive {
+  h2 {
+    font-size: 1.1rem;
+  }
+  P {
+    font-size: 0.9rem;
+  }
+}
+
 .productive h2,
 .productive p,
 .productive a {
   text-align: left;
+}
+
+.introduction__bloc {
+  h1 {
+    margin-bottom: 2rem;
+  }
 }
 
 .productive a {
@@ -46,10 +56,22 @@ section {
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid;
+
   > img {
     margin: 0 0 0 0.5rem;
     transform: translateY(25%);
     transform: scale(1.5);
+  }
+}
+
+.testimonials {
+  position: relative;
+  &::before {
+    content: url(" ../images/bg-quotes.png ");
+    transform: scale(0.35);
+    position: absolute;
+    top: -2rem;
+    left: 1rem;
   }
 }
 
@@ -58,13 +80,28 @@ section {
   text-align: left;
   border-radius: 15px;
   width: 85%;
-  margin: auto;
-  padding: 1.5rem 2rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  font-size: 10px;
+
   > .testimonials__card--id {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2rem 2fr;
+    grid-gap: 0 0.5rem;
     img {
       height: 2rem;
       border-radius: 50%;
+      grid-column: 1;
+      grid-row: 1/3;
+
+      justify-content: center;
     }
+    img,
+    p {
+      margin-bottom: 0;
+    }
+    // em {
+    //   font-weight: bold;
+    // }
   }
 }

@@ -70,10 +70,6 @@ section {
   width: 80%;
 }
 
-.introduction__bloc h1 {
-  margin-bottom: 2rem;
-}
-
 .service h2,
 .productive h2 {
   margin-bottom: 2rem;
@@ -84,10 +80,22 @@ section {
   margin-bottom: 5rem;
 }
 
+.productive h2 {
+  font-size: 1.1rem;
+}
+
+.productive P {
+  font-size: 0.9rem;
+}
+
 .productive h2,
 .productive p,
 .productive a {
   text-align: left;
+}
+
+.introduction__bloc h1 {
+  margin-bottom: 2rem;
 }
 
 .productive a {
@@ -105,24 +113,53 @@ section {
           transform: scale(1.5);
 }
 
+.testimonials {
+  position: relative;
+}
+
+.testimonials::before {
+  content: url(" ../images/bg-quotes.png ");
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+}
+
 .testimonials__card {
   background: #202a3c;
   text-align: left;
   border-radius: 15px;
   width: 85%;
-  margin: auto;
-  padding: 1.5rem 2rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  font-size: 10px;
 }
 
 .testimonials__card > .testimonials__card--id {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2rem 2fr;
+      grid-template-columns: 2rem 2fr;
+  grid-gap: 0 0.5rem;
 }
 
 .testimonials__card > .testimonials__card--id img {
   height: 2rem;
   border-radius: 50%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials__card > .testimonials__card--id img,
+.testimonials__card > .testimonials__card--id p {
+  margin-bottom: 0;
 }
 
 .attribution {
@@ -149,5 +186,117 @@ body {
   font-size: 1em;
   font-weight: 400;
   text-align: center;
+}
+
+section {
+  margin: 1.5rem 1.5rem 7rem 1.5rem;
+}
+
+.introduction__bloc img,
+.introduction__bloc p,
+.service img,
+.service p,
+.productive img,
+.productive p,
+.testimonials__card img,
+.testimonials__card p {
+  margin-bottom: 2rem;
+}
+
+.introduction__bloc > img,
+.productive > img {
+  width: 80%;
+}
+
+.service h2,
+.productive h2 {
+  margin-bottom: 2rem;
+}
+
+.service > .service__card,
+.productive > .service__card {
+  margin-bottom: 5rem;
+}
+
+.productive h2 {
+  font-size: 1.1rem;
+}
+
+.productive P {
+  font-size: 0.9rem;
+}
+
+.productive h2,
+.productive p,
+.productive a {
+  text-align: left;
+}
+
+.introduction__bloc h1 {
+  margin-bottom: 2rem;
+}
+
+.productive a {
+  color: #65e2d9;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid;
+}
+
+.productive a > img {
+  margin: 0 0 0 0.5rem;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.testimonials {
+  position: relative;
+}
+
+.testimonials::before {
+  content: url(" ../images/bg-quotes.png ");
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+}
+
+.testimonials__card {
+  background: #202a3c;
+  text-align: left;
+  border-radius: 15px;
+  width: 85%;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  font-size: 10px;
+}
+
+.testimonials__card > .testimonials__card--id {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2rem 2fr;
+      grid-template-columns: 2rem 2fr;
+  grid-gap: 0 0.5rem;
+}
+
+.testimonials__card > .testimonials__card--id img {
+  height: 2rem;
+  border-radius: 50%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials__card > .testimonials__card--id img,
+.testimonials__card > .testimonials__card--id p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
