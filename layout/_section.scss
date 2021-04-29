@@ -11,6 +11,46 @@ section {
     margin-bottom: 2rem;
   }
 }
+// MEDIA SCREEN ***********************************************************
+@media screen and (min-width: 1200px) {
+  .introduction__bloc {
+    width: 40%;
+    margin: auto;
+  }
+  .service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 6rem;
+    width: 65%;
+    margin: auto;
+  }
+  .productive {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    img {
+      grid-row: 1/4;
+      grid-column: 1;
+    }
+    h2 {
+      align-self: end;
+      // font-size: 2rem;  <===== à régler problème spécificité ???
+    }
+    p {
+      grid-column: 2/4;
+      margin-bottom: 0;
+    }
+  }
+  .testimonials {
+    margin: 10%;
+    display: flex;
+    .testimonials__card {
+      margin-right: 3rem;
+    }
+  }
+}
+// MEDIA SCREEN ***********************************************************
 
 .introduction__bloc,
 .productive {
