@@ -83,11 +83,13 @@ section {
   margin: 1.5rem auto;
   padding: 1.5rem;
   font-size: 10px;
+  line-height: 1.3rem;
 
   > .testimonials__card--id {
     display: grid;
     grid-template-columns: 2rem 2fr;
     grid-gap: 0 0.5rem;
+
     img {
       height: 2rem;
       border-radius: 50%;
@@ -100,8 +102,9 @@ section {
     p {
       margin-bottom: 0;
     }
-    // em {
-    //   font-weight: bold;
-    // }
+    em {
+      font-weight: 700;
+      font-style: normal;
+    }
   }
 }

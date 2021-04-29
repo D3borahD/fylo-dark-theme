@@ -134,6 +134,7 @@ section {
   margin: 1.5rem auto;
   padding: 1.5rem;
   font-size: 10px;
+  line-height: 1.3rem;
 }
 
 .testimonials__card > .testimonials__card--id {
@@ -160,6 +161,11 @@ section {
 .testimonials__card > .testimonials__card--id img,
 .testimonials__card > .testimonials__card--id p {
   margin-bottom: 0;
+}
+
+.testimonials__card > .testimonials__card--id em {
+  font-weight: 700;
+  font-style: normal;
 }
 
 .attribution {
@@ -272,6 +278,7 @@ section {
   margin: 1.5rem auto;
   padding: 1.5rem;
   font-size: 10px;
+  line-height: 1.3rem;
 }
 
 .testimonials__card > .testimonials__card--id {
@@ -298,5 +305,10 @@ section {
 .testimonials__card > .testimonials__card--id img,
 .testimonials__card > .testimonials__card--id p {
   margin-bottom: 0;
+}
+
+.testimonials__card > .testimonials__card--id em {
+  font-weight: 700;
+  font-style: normal;
 }
 /*# sourceMappingURL=main.css.map */
