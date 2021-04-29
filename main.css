@@ -8,6 +8,8 @@ button {
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background: linear-gradient(to right, #65e2d9, #339ecc);
   color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 700;
 }
 
 button:hover {
@@ -51,8 +53,7 @@ ul > li :visited {
   color: white;
 }
 
-section,
-form {
+section {
   margin: 1.5rem 1.6rem 7rem 1.6rem;
 }
 
@@ -69,17 +70,22 @@ form {
 
 .introduction__bloc > img,
 .productive > img {
-  width: 80%;
+  width: 90%;
 }
 
 .service h2,
 .productive h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .service > .service__card,
 .productive > .service__card {
   margin-bottom: 5rem;
+}
+
+.service img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .productive h2 {
@@ -96,8 +102,21 @@ form {
   text-align: left;
 }
 
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
 .introduction__bloc h1 {
   margin-bottom: 2rem;
+  font-size: x-large;
+  line-height: 2.5rem;
+}
+
+.introduction__bloc p {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .productive a {
@@ -105,6 +124,7 @@ form {
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid;
+  font-family: "Raleway", sans-serif;
 }
 
 .productive a > img {
@@ -117,6 +137,7 @@ form {
 
 .testimonials {
   position: relative;
+  padding-top: 3rem;
 }
 
 .testimonials::before {
@@ -124,7 +145,7 @@ form {
   -webkit-transform: scale(0.35);
           transform: scale(0.35);
   position: absolute;
-  top: -2rem;
+  top: 2rem;
   left: 1rem;
 }
 
@@ -177,10 +198,11 @@ form {
 form {
   border-radius: 10px;
   padding: 2rem 1rem;
+  margin: 8rem 1.6rem 5rem 1.6rem;
 }
 
 form h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -232,12 +254,13 @@ form input::placeholder {
 }
 
 footer {
-  margin: 1.5rem 1.6rem 0.7rem 1.6rem;
+  margin: 1rem 1.6rem 0.7rem 1.6rem;
   text-align: left;
+  background: url("../images/bg-curvy-mobile.svg");
 }
 
 footer .contact {
-  margin: 5rem 2rem 5rem 0;
+  margin: 2rem 2rem 5rem 0;
 }
 
 footer .contact div {
@@ -256,6 +279,10 @@ footer .contact__adress img {
 
 footer img {
   margin: 0 1.6rem 0 0;
+}
+
+footer .footer__brand {
+  margin-left: 0.5rem;
 }
 
 footer ul {
@@ -311,10 +338,10 @@ body {
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+  line-height: 1.5rem;
 }
 
-section,
-form {
+section {
   margin: 1.5rem 1.6rem 7rem 1.6rem;
 }
 
@@ -331,17 +358,22 @@ form {
 
 .introduction__bloc > img,
 .productive > img {
-  width: 80%;
+  width: 90%;
 }
 
 .service h2,
 .productive h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .service > .service__card,
 .productive > .service__card {
   margin-bottom: 5rem;
+}
+
+.service img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .productive h2 {
@@ -358,8 +390,21 @@ form {
   text-align: left;
 }
 
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
 .introduction__bloc h1 {
   margin-bottom: 2rem;
+  font-size: x-large;
+  line-height: 2.5rem;
+}
+
+.introduction__bloc p {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .productive a {
@@ -367,6 +412,7 @@ form {
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid;
+  font-family: "Raleway", sans-serif;
 }
 
 .productive a > img {
@@ -379,6 +425,7 @@ form {
 
 .testimonials {
   position: relative;
+  padding-top: 3rem;
 }
 
 .testimonials::before {
@@ -386,7 +433,7 @@ form {
   -webkit-transform: scale(0.35);
           transform: scale(0.35);
   position: absolute;
-  top: -2rem;
+  top: 2rem;
   left: 1rem;
 }
 

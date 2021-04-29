@@ -1,6 +1,4 @@
-section,
-form {
-  //   margin-bottom: 7rem;
+section {
   margin: $MarginMobileBloc;
 }
 
@@ -17,18 +15,22 @@ form {
 .introduction__bloc,
 .productive {
   > img {
-    width: 80%;
+    width: 90%;
   }
 }
 
 .service,
 .productive {
   h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   > .service__card {
     margin-bottom: 5rem;
   }
+}
+
+.service img {
+  transform: scale(0.8);
 }
 
 .productive {
@@ -46,9 +48,21 @@ form {
   text-align: left;
 }
 
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
 .introduction__bloc {
   h1 {
     margin-bottom: 2rem;
+    font-size: x-large;
+    line-height: 2.5rem;
+  }
+  p {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -57,7 +71,7 @@ form {
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid;
-
+  font-family: "Raleway", sans-serif;
   > img {
     margin: 0 0 0 0.5rem;
     transform: translateY(25%);
@@ -67,11 +81,12 @@ form {
 
 .testimonials {
   position: relative;
+  padding-top: 3rem;
   &::before {
     content: url(" ../images/bg-quotes.png ");
     transform: scale(0.35);
     position: absolute;
-    top: -2rem;
+    top: 2rem;
     left: 1rem;
   }
 }
