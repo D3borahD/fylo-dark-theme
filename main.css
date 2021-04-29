@@ -3,10 +3,11 @@ button {
   width: 13.5rem;
   height: 2.5rem;
   border-radius: 25px;
+  border: none;
+  cursor: pointer;
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background: linear-gradient(to right, #65e2d9, #339ecc);
   color: white;
-  border: none;
 }
 
 button:hover {
@@ -50,8 +51,9 @@ ul > li :visited {
   color: white;
 }
 
-section {
-  margin: 1.5rem 1.5rem 7rem 1.5rem;
+section,
+form {
+  margin: 1.5rem 1.6rem 7rem 1.6rem;
 }
 
 .introduction__bloc img,
@@ -126,8 +128,12 @@ section {
   left: 1rem;
 }
 
-.testimonials__card {
+.testimonials__card,
+form {
   background: #202a3c;
+}
+
+.testimonials__card {
   text-align: left;
   border-radius: 15px;
   width: 85%;
@@ -168,6 +174,54 @@ section {
   font-style: normal;
 }
 
+form {
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+
+form h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+form p,
+form input {
+  margin-bottom: 2rem;
+}
+
+form input {
+  width: 13.5rem;
+  height: 2.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+form input,
+form button {
+  width: 90%;
+}
+
+form input::-webkit-input-placeholder {
+  color: #b6b4b4;
+  padding: 2rem;
+}
+
+form input:-ms-input-placeholder {
+  color: #b6b4b4;
+  padding: 2rem;
+}
+
+form input::-ms-input-placeholder {
+  color: #b6b4b4;
+  padding: 2rem;
+}
+
+form input::placeholder {
+  color: #b6b4b4;
+  padding: 2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -175,6 +229,71 @@ section {
 
 .attribution a {
   color: #3e52a3;
+}
+
+footer {
+  margin: 1.5rem 1.6rem 0.7rem 1.6rem;
+  text-align: left;
+}
+
+footer .contact {
+  margin: 5rem 2rem 5rem 0;
+}
+
+footer .contact div {
+  margin-bottom: 1rem;
+}
+
+footer .contact__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contact__adress img {
+  height: 18px;
+}
+
+footer img {
+  margin: 0 1.6rem 0 0;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+footer ul li {
+  margin-bottom: 1.5rem;
+  list-style: none;
+  margin-left: 0;
+}
+
+footer .social-media {
+  text-align: center;
+}
+
+footer .social-media a {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin: 2rem 0.2rem;
+}
+
+footer .social-media a i {
+  position: absolute;
+  top: 25%;
+  left: 30%;
 }
 
 * {
@@ -189,13 +308,14 @@ body {
   background: #181f2a;
   color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
 
-section {
-  margin: 1.5rem 1.5rem 7rem 1.5rem;
+section,
+form {
+  margin: 1.5rem 1.6rem 7rem 1.6rem;
 }
 
 .introduction__bloc img,
@@ -270,8 +390,12 @@ section {
   left: 1rem;
 }
 
-.testimonials__card {
+.testimonials__card,
+form {
   background: #202a3c;
+}
+
+.testimonials__card {
   text-align: left;
   border-radius: 15px;
   width: 85%;

@@ -1,4 +1,5 @@
-section {
+section,
+form {
   //   margin-bottom: 7rem;
   margin: $MarginMobileBloc;
 }
@@ -75,8 +76,12 @@ section {
   }
 }
 
-.testimonials__card {
+.testimonials__card,
+form {
   background: $DarkBlueTestimonialsBackground;
+}
+
+.testimonials__card {
   text-align: left;
   border-radius: 15px;
   width: 85%;
@@ -84,12 +89,10 @@ section {
   padding: 1.5rem;
   font-size: 10px;
   line-height: 1.3rem;
-
   > .testimonials__card--id {
     display: grid;
     grid-template-columns: 2rem 2fr;
     grid-gap: 0 0.5rem;
-
     img {
       height: 2rem;
       border-radius: 50%;
