@@ -144,13 +144,13 @@ h2 {
 .testimonials {
   position: relative;
   padding-top: 3rem;
-  margin-bottom: 25rem;
+  margin-bottom: 15rem;
   &::before {
     content: url(" ../images/bg-quotes.png ");
     transform: scale(0.35);
     position: absolute;
-    top: 2.5rem;
-    left: 4rem;
+    top: 2rem;
+    left: 2.5rem;
   }
 }
 
@@ -162,7 +162,7 @@ form {
 .testimonials__card {
   text-align: left;
   border-radius: 15px;
-  width: 85%;
+  width: 100%;
   margin: 1.5rem auto;
   padding: 1.5rem;
   font-size: 10px;

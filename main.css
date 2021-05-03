@@ -237,7 +237,7 @@ h2 {
 .testimonials {
   position: relative;
   padding-top: 3rem;
-  margin-bottom: 25rem;
+  margin-bottom: 15rem;
 }
 
 .testimonials::before {
@@ -245,8 +245,8 @@ h2 {
   -webkit-transform: scale(0.35);
           transform: scale(0.35);
   position: absolute;
-  top: 2.5rem;
-  left: 4rem;
+  top: 2rem;
+  left: 2.5rem;
 }
 
 .testimonials__card,
@@ -257,7 +257,7 @@ form {
 .testimonials__card {
   text-align: left;
   border-radius: 15px;
-  width: 85%;
+  width: 100%;
   margin: 1.5rem auto;
   padding: 1.5rem;
   font-size: 10px;
@@ -301,7 +301,7 @@ form {
   margin: 8rem 1.6rem 0 1.6rem;
   z-index: 10;
   position: absolute;
-  bottom: -210rem;
+  bottom: -215rem;
 }
 
 form h2 {
@@ -360,7 +360,7 @@ form input::placeholder {
 }
 
 footer {
-  padding: 5rem 1.6rem 0.7rem 1.6rem;
+  padding: 15rem 1.6rem 0.7rem 1.6rem;
   text-align: left;
   background: #0b1523;
   position: relative;
@@ -612,7 +612,7 @@ h2 {
 .testimonials {
   position: relative;
   padding-top: 3rem;
-  margin-bottom: 25rem;
+  margin-bottom: 15rem;
 }
 
 .testimonials::before {
@@ -620,8 +620,8 @@ h2 {
   -webkit-transform: scale(0.35);
           transform: scale(0.35);
   position: absolute;
-  top: 2.5rem;
-  left: 4rem;
+  top: 2rem;
+  left: 2.5rem;
 }
 
 .testimonials__card,
@@ -632,7 +632,7 @@ form {
 .testimonials__card {
   text-align: left;
   border-radius: 15px;
-  width: 85%;
+  width: 100%;
   margin: 1.5rem auto;
   padding: 1.5rem;
   font-size: 10px;
