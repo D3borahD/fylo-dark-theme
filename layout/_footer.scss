@@ -8,9 +8,10 @@
 }
 
 footer {
-  margin: 1rem 1.6rem 0.7rem 1.6rem;
+  padding: 5rem 1.6rem 0.7rem 1.6rem;
   text-align: left;
-  background: url("../images/bg-curvy-mobile.svg");
+  background: $DarkBlueFooterbackground;
+  position: relative;
   .contact {
     margin: 2rem 2rem 5rem 0;
   }

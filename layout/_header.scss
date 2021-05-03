@@ -3,21 +3,38 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   padding: 1.3rem;
+  z-index: 0;
   > img {
     width: 20%;
   }
 }
+
 ul {
   display: flex;
-  color: $White;
   list-style: none;
   > li {
     margin-left: 1rem;
     a {
       text-decoration: none;
+      color: gray;
     }
     :visited {
+      color: grey;
+    }
+    :hover {
       color: $White;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    margin-bottom: 7rem;
+    li {
+      margin-left: 2rem;
+    }
+    a {
+      font-size: 1.5rem;
     }
   }
 }

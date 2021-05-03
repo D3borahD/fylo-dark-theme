@@ -1,5 +1,5 @@
 section {
-  margin: $MarginMobileBloc;
+  padding: $paddingMobileBloc;
 }
 
 .introduction__bloc,
@@ -69,19 +69,6 @@ section {
   }
 }
 
-.service img {
-  transform: scale(0.8);
-}
-
-.productive {
-  h2 {
-    font-size: 1.1rem;
-  }
-  P {
-    font-size: 0.9rem;
-  }
-}
-
 .productive h2,
 .productive p,
 .productive a {
@@ -94,15 +81,38 @@ h2 {
   font-weight: 700;
 }
 
-.introduction__bloc {
+.introduction {
   h1 {
-    margin-bottom: 2rem;
-    font-size: x-large;
+    font-size: 1.5rem;
     line-height: 2.5rem;
   }
-  p {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  P {
+    margin: 0 0.5rem 2.5rem 0.5rem;
+  }
+}
+.introduction__bloc {
+  height: 27rem;
+  width: 100%;
+  position: relative;
+  .introduction__illustration {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  .curvy {
+    z-index: 0;
+    position: absolute;
+    margin-top: -2rem;
+    width: 150%;
+    left: -5rem;
+    top: 17rem;
+  }
+  h1 {
+    position: absolute;
+    z-index: 2;
+    top: 18rem;
   }
 }
 
@@ -118,16 +128,29 @@ h2 {
     transform: scale(1.5);
   }
 }
+.service img {
+  transform: scale(0.8);
+}
+
+.productive {
+  h2 {
+    font-size: 1.1rem;
+  }
+  P {
+    font-size: 0.9rem;
+  }
+}
 
 .testimonials {
   position: relative;
   padding-top: 3rem;
+  margin-bottom: 25rem;
   &::before {
     content: url(" ../images/bg-quotes.png ");
     transform: scale(0.35);
     position: absolute;
-    top: 2rem;
-    left: 1rem;
+    top: 2.5rem;
+    left: 4rem;
   }
 }
 

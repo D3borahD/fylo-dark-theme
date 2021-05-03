@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 button {
-  width: 13.5rem;
-  height: 2.5rem;
+  width: 15rem;
+  height: 3rem;
   border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
@@ -27,6 +30,7 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 1.3rem;
+  z-index: 0;
 }
 
 header > img {
@@ -37,7 +41,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
   list-style: none;
 }
 
@@ -47,14 +50,31 @@ ul > li {
 
 ul > li a {
   text-decoration: none;
+  color: gray;
 }
 
 ul > li :visited {
+  color: grey;
+}
+
+ul > li :hover {
   color: white;
 }
 
+@media screen and (min-width: 1200px) {
+  header {
+    margin-bottom: 7rem;
+  }
+  header li {
+    margin-left: 2rem;
+  }
+  header a {
+    font-size: 1.5rem;
+  }
+}
+
 section {
-  margin: 1.5rem 1.6rem 7rem 1.6rem;
+  padding: 1.5rem 3.5rem 7rem 3.5rem;
 }
 
 .introduction__bloc img,
@@ -135,19 +155,6 @@ section {
   margin-bottom: 5rem;
 }
 
-.service img {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
-.productive h2 {
-  font-size: 1.1rem;
-}
-
-.productive P {
-  font-size: 0.9rem;
-}
-
 .productive h2,
 .productive p,
 .productive a {
@@ -160,15 +167,42 @@ h2 {
   font-weight: 700;
 }
 
-.introduction__bloc h1 {
-  margin-bottom: 2rem;
-  font-size: x-large;
+.introduction h1 {
+  font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
-.introduction__bloc p {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.introduction P {
+  margin: 0 0.5rem 2.5rem 0.5rem;
+}
+
+.introduction__bloc {
+  height: 27rem;
+  width: 100%;
+  position: relative;
+}
+
+.introduction__bloc .introduction__illustration {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.introduction__bloc .curvy {
+  z-index: 0;
+  position: absolute;
+  margin-top: -2rem;
+  width: 150%;
+  left: -5rem;
+  top: 17rem;
+}
+
+.introduction__bloc h1 {
+  position: absolute;
+  z-index: 2;
+  top: 18rem;
 }
 
 .productive a {
@@ -187,9 +221,23 @@ h2 {
           transform: scale(1.5);
 }
 
+.service img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.productive h2 {
+  font-size: 1.1rem;
+}
+
+.productive P {
+  font-size: 0.9rem;
+}
+
 .testimonials {
   position: relative;
   padding-top: 3rem;
+  margin-bottom: 25rem;
 }
 
 .testimonials::before {
@@ -197,8 +245,8 @@ h2 {
   -webkit-transform: scale(0.35);
           transform: scale(0.35);
   position: absolute;
-  top: 2rem;
-  left: 1rem;
+  top: 2.5rem;
+  left: 4rem;
 }
 
 .testimonials__card,
@@ -250,7 +298,10 @@ form {
 form {
   border-radius: 10px;
   padding: 2rem 1rem;
-  margin: 8rem 1.6rem 5rem 1.6rem;
+  margin: 8rem 1.6rem 0 1.6rem;
+  z-index: 10;
+  position: absolute;
+  bottom: -210rem;
 }
 
 form h2 {
@@ -264,9 +315,12 @@ form input {
 }
 
 form input {
-  width: 13.5rem;
-  height: 2.5rem;
+  width: 15rem;
+  height: 3rem;
   border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -306,9 +360,10 @@ form input::placeholder {
 }
 
 footer {
-  margin: 1rem 1.6rem 0.7rem 1.6rem;
+  padding: 5rem 1.6rem 0.7rem 1.6rem;
   text-align: left;
-  background: url("../images/bg-curvy-mobile.svg");
+  background: #0b1523;
+  position: relative;
 }
 
 footer .contact {
@@ -394,7 +449,7 @@ body {
 }
 
 section {
-  margin: 1.5rem 1.6rem 7rem 1.6rem;
+  padding: 1.5rem 3.5rem 7rem 3.5rem;
 }
 
 .introduction__bloc img,
@@ -475,19 +530,6 @@ section {
   margin-bottom: 5rem;
 }
 
-.service img {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
-.productive h2 {
-  font-size: 1.1rem;
-}
-
-.productive P {
-  font-size: 0.9rem;
-}
-
 .productive h2,
 .productive p,
 .productive a {
@@ -500,15 +542,42 @@ h2 {
   font-weight: 700;
 }
 
-.introduction__bloc h1 {
-  margin-bottom: 2rem;
-  font-size: x-large;
+.introduction h1 {
+  font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
-.introduction__bloc p {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.introduction P {
+  margin: 0 0.5rem 2.5rem 0.5rem;
+}
+
+.introduction__bloc {
+  height: 27rem;
+  width: 100%;
+  position: relative;
+}
+
+.introduction__bloc .introduction__illustration {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.introduction__bloc .curvy {
+  z-index: 0;
+  position: absolute;
+  margin-top: -2rem;
+  width: 150%;
+  left: -5rem;
+  top: 17rem;
+}
+
+.introduction__bloc h1 {
+  position: absolute;
+  z-index: 2;
+  top: 18rem;
 }
 
 .productive a {
@@ -527,9 +596,23 @@ h2 {
           transform: scale(1.5);
 }
 
+.service img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.productive h2 {
+  font-size: 1.1rem;
+}
+
+.productive P {
+  font-size: 0.9rem;
+}
+
 .testimonials {
   position: relative;
   padding-top: 3rem;
+  margin-bottom: 25rem;
 }
 
 .testimonials::before {
@@ -537,8 +620,8 @@ h2 {
   -webkit-transform: scale(0.35);
           transform: scale(0.35);
   position: absolute;
-  top: 2rem;
-  left: 1rem;
+  top: 2.5rem;
+  left: 4rem;
 }
 
 .testimonials__card,
