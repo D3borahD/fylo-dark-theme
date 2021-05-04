@@ -91,6 +91,9 @@ section {
 }
 
 @media screen and (min-width: 1200px) {
+  section {
+    padding: 0 3.5rem 0 3.5rem;
+  }
   .introduction {
     width: 100%;
     padding: 0 25%;
@@ -156,6 +159,16 @@ section {
   }
   .testimonials .testimonials__card {
     margin-right: 3rem;
+    z-index: 1;
+  }
+  .testimonials__card::before {
+    content: url(" ../images/bg-quotes.png ");
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    z-index: 0;
   }
 }
 
@@ -265,7 +278,7 @@ h2 {
   margin-bottom: 15rem;
 }
 
-.testimonials::before {
+.testimonials__card::before {
   content: url(" ../images/bg-quotes.png ");
   -webkit-transform: scale(0.35);
           transform: scale(0.35);
@@ -375,6 +388,25 @@ form input::placeholder {
   padding: 2rem;
 }
 
+@media screen and (min-width: 1200px) {
+  form {
+    margin-left: 20%;
+    bottom: -127rem;
+    width: 50%;
+  }
+  form button {
+    width: 50%;
+    margin-left: 2rem;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -392,7 +424,7 @@ footer {
 }
 
 footer .contact {
-  margin: 2rem 2rem 5rem 0;
+  margin: 2rem 2rem 0rem 0;
 }
 
 footer .contact div {
@@ -455,6 +487,31 @@ footer .social-media a i {
   left: 30%;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-nav a:hover {
+    text-decoration: none;
+  }
+  .contact__adress {
+    width: 21.8rem;
+  }
+  .social-media a:hover {
+    color: #65e2d9;
+    border: 1px solid #65e2d9;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -489,6 +546,9 @@ section {
 }
 
 @media screen and (min-width: 1200px) {
+  section {
+    padding: 0 3.5rem 0 3.5rem;
+  }
   .introduction {
     width: 100%;
     padding: 0 25%;
@@ -554,6 +614,16 @@ section {
   }
   .testimonials .testimonials__card {
     margin-right: 3rem;
+    z-index: 1;
+  }
+  .testimonials__card::before {
+    content: url(" ../images/bg-quotes.png ");
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+    z-index: 0;
   }
 }
 
@@ -663,7 +733,7 @@ h2 {
   margin-bottom: 15rem;
 }
 
-.testimonials::before {
+.testimonials__card::before {
   content: url(" ../images/bg-quotes.png ");
   -webkit-transform: scale(0.35);
           transform: scale(0.35);

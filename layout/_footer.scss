@@ -13,7 +13,7 @@ footer {
   background: $DarkBlueFooterbackground;
   position: relative;
   .contact {
-    margin: 2rem 2rem 5rem 0;
+    margin: 2rem 2rem 0rem 0;
   }
   .contact div {
     margin-bottom: 1rem;
@@ -57,5 +57,24 @@ footer {
         left: 30%;
       }
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact {
+    display: flex;
+  }
+  .navbar-nav a:hover {
+    text-decoration: none;
+  }
+  .contact__adress {
+    width: 21.8rem;
+  }
+  .social-media a:hover {
+    color: $CyanInsideCall-to-actionGradient;
+    border: 1px solid $CyanInsideCall-to-actionGradient;
   }
 }

@@ -26,3 +26,19 @@ form {
     padding: 2rem;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  form {
+    margin-left: 20%;
+    bottom: -127rem;
+    width: 50%;
+    button {
+      width: 50%;
+      margin-left: 2rem;
+    }
+  }
+  .form {
+    display: flex;
+    justify-content: space-around;
+  }
+}
