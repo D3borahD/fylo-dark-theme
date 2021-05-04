@@ -50,6 +50,9 @@ section {
       font-size: 2rem;
       line-height: 2.5rem;
       grid-column: 2/4;
+      span {
+        display: block; // permet le retour à la ligne dans un titre
+      }
     }
     p {
       grid-column: 2/4;
