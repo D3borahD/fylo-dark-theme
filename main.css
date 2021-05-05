@@ -333,13 +333,18 @@ form {
   font-style: normal;
 }
 
+.section-form {
+  position: relative;
+}
+
 form {
   border-radius: 10px;
   padding: 2rem 1rem;
-  margin: 8rem 1.6rem 0 1.6rem;
+  width: 90%;
   z-index: 10;
   position: absolute;
-  bottom: -190rem;
+  bottom: -12rem;
+  left: 5%;
 }
 
 form h2 {
@@ -388,11 +393,33 @@ form input::placeholder {
   padding: 2rem;
 }
 
+.invalid-text {
+  display: none;
+}
+
+input:required:valid .form {
+  position: relative;
+}
+
+input:required:valid .form::after {
+  position: absolute;
+  content: "Please enter a valid email address";
+  color: red;
+  bottom: 0;
+  left: 2rem;
+}
+
+input:required:valid .invalid-text {
+  display: block;
+}
+
 @media screen and (min-width: 1200px) {
   form {
-    margin-left: 20%;
-    bottom: -127rem;
+    bottom: -9rem;
     width: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   form button {
     width: 50%;
@@ -420,7 +447,6 @@ footer {
   padding: 15rem 1.6rem 0.7rem 1.6rem;
   text-align: left;
   background: #0b1523;
-  position: relative;
 }
 
 footer .contact {
@@ -521,6 +547,8 @@ footer .social-media a i {
 
 body {
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
   background: #181f2a;
   color: white;
   font-family: "Open Sans", sans-serif;

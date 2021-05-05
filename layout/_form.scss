@@ -1,11 +1,15 @@
+.section-form {
+  position: relative;
+}
+
 form {
   border-radius: 10px;
   padding: 2rem 1rem;
-  margin: 8rem 1.6rem 0 1.6rem;
+  width: 90%;
   z-index: 10;
   position: absolute;
-  bottom: -190rem;
-
+  bottom: -12rem;
+  left: 5%;
   h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -26,12 +30,32 @@ form {
     padding: 2rem;
   }
 }
+.invalid-text {
+  display: none;
+}
+
+input:required:valid {
+  .form {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "Please enter a valid email address";
+      color: red;
+      bottom: 0;
+      left: 2rem;
+    }
+  }
+  .invalid-text {
+    display: block;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   form {
-    margin-left: 20%;
-    bottom: -127rem;
+    bottom: -9rem;
     width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     button {
       width: 50%;
       margin-left: 2rem;

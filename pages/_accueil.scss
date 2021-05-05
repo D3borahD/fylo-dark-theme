@@ -6,6 +6,8 @@
 
 body {
   width: 100%;
+  max-width: 1440px;
+  margin: auto;
   background: $DarkBlueMainBackground;
   color: $White;
   font-family: "Open Sans", sans-serif;
