@@ -27,27 +27,21 @@ form {
   }
   input::placeholder {
     color: rgb(182, 180, 180);
+  }
+  input {
     padding: 2rem;
   }
-}
-.invalid-text {
-  display: none;
+  #invalid-text {
+    position: absolute;
+    left: -2rem;
+  }
 }
 
-input:required:valid {
-  .form {
-    position: relative;
-    &::after {
-      position: absolute;
-      content: "Please enter a valid email address";
-      color: red;
-      bottom: 0;
-      left: 2rem;
-    }
-  }
-  .invalid-text {
-    display: block;
-  }
+#invalid-text {
+  color: red;
+  text-align: left;
+  margin-left: 5rem;
+  z-index: 10;
 }
 
 @media screen and (min-width: 1200px) {
@@ -64,5 +58,8 @@ input:required:valid {
   .form {
     display: flex;
     justify-content: space-around;
+  }
+  #mail-add {
+    margin-bottom: 0rem;
   }
 }

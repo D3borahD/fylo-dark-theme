@@ -375,42 +375,34 @@ form button {
 
 form input::-webkit-input-placeholder {
   color: #b6b4b4;
-  padding: 2rem;
 }
 
 form input:-ms-input-placeholder {
   color: #b6b4b4;
-  padding: 2rem;
 }
 
 form input::-ms-input-placeholder {
   color: #b6b4b4;
-  padding: 2rem;
 }
 
 form input::placeholder {
   color: #b6b4b4;
+}
+
+form input {
   padding: 2rem;
 }
 
-.invalid-text {
-  display: none;
-}
-
-input:required:valid .form {
-  position: relative;
-}
-
-input:required:valid .form::after {
+form #invalid-text {
   position: absolute;
-  content: "Please enter a valid email address";
-  color: red;
-  bottom: 0;
-  left: 2rem;
+  left: -2rem;
 }
 
-input:required:valid .invalid-text {
-  display: block;
+#invalid-text {
+  color: red;
+  text-align: left;
+  margin-left: 5rem;
+  z-index: 10;
 }
 
 @media screen and (min-width: 1200px) {
@@ -431,6 +423,9 @@ input:required:valid .invalid-text {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  #mail-add {
+    margin-bottom: 0rem;
   }
 }
 

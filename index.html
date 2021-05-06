@@ -29,12 +29,11 @@
     <meta property="og:url" content="http://www.example.com/" />
     <meta property="og:image" content="http://example.com/image.jpg" />
     <meta property="og:description" content="Description Here" />
-    <link
+     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="section.css">
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
@@ -164,12 +163,12 @@
         help you.
       </p>
       <div class="form">
-      <input type="email" placeholder="email@exemple.com" required/>
+      <input id="mail-add" type="email" placeholder="email@exemple.com" required/>
    
-      <button type="button">Get Started For Free</button>
+      <button id="form-button" type="button" onclick="warning()">Get Started For Free</button>
       
     </div>
-    <div class="invalid-text">Please enter a valid email address</div>
+    <p id="invalid-text"></p>
 
     </form>
   </section>
@@ -217,5 +216,7 @@
         >. Coded by <a href="https://github.com/D3borahD">D3borah</a>.
       </p>
     </footer>
+
+<script src="app.js"></script>
   </body>
 </html>
